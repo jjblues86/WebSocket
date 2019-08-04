@@ -10,15 +10,18 @@
 </head>
 <body>
  
-  <div class="jabin-chat">
-    <div class="chat-window">
-      <div class="output">
+  <div id="jabin-chat">
+    <h2>Jabin Chat</h2>
+    <div id="chat-window">
+      <div id="output">
+        <div id="feedback"></div>
       </div>
-      <input class="handle" type="text" placeholder="Handle">
-      <input class="message" type="text" placeholder="Message">
-      <button class="send">Send</button>
+      <input id="handle" type="text" placeholder="Handle">
+      <input id="message" type="text" placeholder="Message">
+      <button id="send">Send</button>
     </div>
   </div>
+  <script src="http://localhost:4000/socket.io/socket.io.js"></script>
   <script src="/chat.js"></script>
 </body>
 </html>
